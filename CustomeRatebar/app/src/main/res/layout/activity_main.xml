@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="left">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Rate 5 star for RatingBar"
+        />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        style="@style/foodRatingBar"
+        android:id="@+id/ratingbar_default"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="show state up checkbox"
+        android:textColor="#CC00CC"
+        android:textSize="20dp"
+        />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        style="@style/lunchRatingBar"
+        android:id="@+id/ratingbar_default1"
+        />
+</LinearLayout>
