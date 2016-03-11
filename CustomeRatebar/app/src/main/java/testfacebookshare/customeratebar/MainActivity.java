@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ratingBar_default.setRating(5);
                 ratingBar_default1.setRating(5);
+
+
+                Toast.makeText(MainActivity.this,"This is testing Toast message", Toast.LENGTH_LONG).show();
+
                 text.setText("Rating Large:" + String.valueOf(ratingBar_default.getRating())+"\nRating Small:"+String.valueOf(ratingBar_default1.getRating()));
             }
         });
